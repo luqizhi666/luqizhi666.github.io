@@ -14,7 +14,7 @@
   "dependencies": {
     "audit": "^0.0.6",
     "bluebird": "^3.7.2",
-    "core-js": "^3.26.1",
+    "core-js": "^3.27.1",
     "hexo": "^6.3.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^2.0.0",
