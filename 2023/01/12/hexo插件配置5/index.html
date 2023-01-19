@@ -1,0 +1,319 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>hexo插件配置5 | luqizhi's blog</title><meta name="author" content="luqizhi"><meta name="copyright" content="luqizhi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前情提要最近因为各种原因，在搞aplayer插件等，在windows装好nodejs，git后，发现如果把.sh脚本 改为bat脚本，不能直接使用，复制到命令行里面可以用[无语.jpg],到现在还没有解决。 hexo插件配置（5）sitemap12npm install hexo-generator-sitemap --savenpm install hexo-generator-baidu-si">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo插件配置5">
+<meta property="og:url" content="https://luqizhi.tk/2023/01/12/hexo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE5/index.html">
+<meta property="og:site_name" content="luqizhi&#39;s blog">
+<meta property="og:description" content="前情提要最近因为各种原因，在搞aplayer插件等，在windows装好nodejs，git后，发现如果把.sh脚本 改为bat脚本，不能直接使用，复制到命令行里面可以用[无语.jpg],到现在还没有解决。 hexo插件配置（5）sitemap12npm install hexo-generator-sitemap --savenpm install hexo-generator-baidu-si">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://luqizhi.tk/png.png">
+<meta property="article:published_time" content="2023-01-12T04:09:25.000Z">
+<meta property="article:modified_time" content="2023-01-15T14:02:22.000Z">
+<meta property="article:author" content="luqizhi">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="sitemap">
+<meta property="article:tag" content="插件">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://luqizhi.tk/png.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://luqizhi.tk/2023/01/12/hexo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":70,"languages":{"author":"作者: luqizhi","link":"链接: ","source":"来源: luqizhi's blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'hexo插件配置5',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-01-15 22:02:22'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = url => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      link.onload = () => resolve()
+      link.onerror = () => reject()
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/png.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/wendy.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="luqizhi's blog"><img class="site-icon" src="/png.png"/><span class="site-name">luqizhi's blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">hexo插件配置5</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-12T04:09:25.000Z" title="发表于 2023-01-12 12:09:25">2023-01-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-15T14:02:22.000Z" title="更新于 2023-01-15 22:02:22">2023-01-15</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%BB%98%E8%AE%A4%EF%BC%882023%EF%BC%89/">默认（2023）</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/linuxdeploy%E6%90%AD%E5%BB%BAhexo/">linuxdeploy搭建hexo</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">782</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="hexo插件配置5"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>最近因为各种原因，在搞aplayer插件等，在windows装好nodejs，git后，发现如果把.sh脚本 改为bat脚本，不能直接使用，复制到命令行里面可以用[无语.jpg],到现在还没有解决。</p>
+<h1 id="hexo插件配置（5）"><a href="#hexo插件配置（5）" class="headerlink" title="hexo插件配置（5）"></a>hexo插件配置（5）</h1><h2 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<p>每次进行打包的时候，会自动在<code>public</code>文件夹下生成<code>sitemap.xml</code>和<code>baidusitemap.xml</code></p>
+<img title="" src="/pic/6d1e8097cecab52e21621a6a11c3801bf7574847.png" alt="2023-01-15-21-04-12-image.png" width="451">
+
+<img src="/pic/383d1d85a5a7f8d39ec3615c0d16ba15ff05f10d.png" title="" alt="2023-01-15-20-33-44-image.png" width="301">
+
+<h2 id="aplayer"><a href="#aplayer" class="headerlink" title="aplayer"></a>aplayer</h2><p><mark><strong>注意：特别要注意格式问题，如双引号单引号逗号等···被坑了很久（几天），如果复制发现不行建议检查这些内容</strong></mark></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">custom_html: &#x27;<span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;APlayer.min.css&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;aplayer&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;APlayer.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">              <span class="keyword">const</span> ap = <span class="keyword">new</span> <span class="title class_">APlayer</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">                  <span class="attr">container</span>: <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;aplayer&quot;</span>),</span></span><br><span class="line"><span class="language-javascript">                  <span class="attr">fixed</span>: <span class="literal">true</span>,</span></span><br><span class="line"><span class="language-javascript">                  <span class="attr">autoplay</span>: <span class="literal">true</span>,</span></span><br><span class="line"><span class="language-javascript">                  <span class="attr">lrcType</span>: <span class="number">3</span>,</span></span><br><span class="line"><span class="language-javascript">                  <span class="attr">audio</span>: [</span></span><br><span class="line"><span class="language-javascript">                      &#123;</span></span><br><span class="line"><span class="language-javascript">                          <span class="attr">name</span>: <span class="string">&quot;Take Off And Land 2012&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">                          <span class="attr">artist</span>: <span class="string">&quot;Kitsune2&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">                          <span class="attr">url</span>: <span class="string">&quot;https://music.163.com/song/media/outer/url?id=1293905789.mp3&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">                          <span class="attr">cover</span>: <span class="string">&quot;https://p2.music.126.net/A-jwjeGVtSAEvhvBw7hMlA==/109951163413219245.jpg?param=130y130&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">                          <span class="attr">lrc</span>: <span class="string">&quot;nothing.lrc&quot;</span></span></span><br><span class="line"><span class="language-javascript">                      &#125;,</span></span><br><span class="line"><span class="language-javascript">                      &#123;</span></span><br><span class="line"><span class="language-javascript">                          <span class="attr">name</span>: <span class="string">&quot;阳光风神&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">                          <span class="attr">artist</span>: <span class="string">&quot;街憬&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">                          <span class="attr">url</span>: <span class="string">&quot;https://music.163.com/song/media/outer/url?id=1920315462.mp3&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">                          <span class="attr">cover</span>: <span class="string">&quot;https://p1.music.126.net/HxUUVR8VhROxLVcyJKJQ0A==/109951166583333280.jpg?param=130y130&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">                          <span class="attr">lrc</span>: <span class="string">&quot;阳光风神（赠品） - 街憬.lrc&quot;</span></span></span><br><span class="line"><span class="language-javascript">                      &#125;</span></span><br><span class="line"><span class="language-javascript">                  ]</span></span><br><span class="line"><span class="language-javascript">              &#125;);</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">              </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">              &#x27;</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-加入如上内容至-config-fluid-yml"><a href="#1-加入如上内容至-config-fluid-yml" class="headerlink" title="1.加入如上内容至_config.fluid.yml"></a>1.加入如上内容至_config.fluid.yml</h3><p>下面的script是配置文件</p>
+<p>请访问官方文档<a target="_blank" rel="noopener" href="https://aplayer.js.org/">https://aplayer.js.org/</a></p>
+<p>附上一表：</p>
+<div>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>container</td>
+<td>document.querySelector('.aplayer')</td>
+<td>播放器容器元素</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>false</td>
+<td>开启吸底模式, <a href="https://aplayer.js.org/#/home?id=fixed-mode" target="_blank">详情</a></td>
+</tr>
+<tr>
+<td>mini</td>
+<td>false</td>
+<td>开启迷你模式, <a href="https://aplayer.js.org/#/home?id=mini-mode" target="_blank">详情</a></td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>false</td>
+<td>音频自动播放</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>'#b7daff'</td>
+<td>主题色</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>'all'</td>
+<td>音频循环播放, 可选值: 'all', 'one', 'none'</td>
+</tr>
+<tr>
+<td>order</td>
+<td>'list'</td>
+<td>音频循环顺序, 可选值: 'list', 'random'</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>'auto'</td>
+<td>预加载，可选值: 'none', 'metadata', 'auto'</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>0.7</td>
+<td>默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</td>
+</tr>
+<tr>
+<td>audio</td>
+<td>-</td>
+<td>音频信息, 应该是一个对象或对象数组</td>
+</tr>
+<tr>
+<td>audio.name</td>
+<td>-</td>
+<td>音频名称</td>
+</tr>
+<tr>
+<td>audio.artist</td>
+<td>-</td>
+<td>音频艺术家</td>
+</tr>
+<tr>
+<td>audio.url</td>
+<td>-</td>
+<td>音频链接</td>
+</tr>
+<tr>
+<td>audio.cover</td>
+<td>-</td>
+<td>音频封面</td>
+</tr>
+<tr>
+<td>audio.lrc</td>
+<td>-</td>
+<td><a href="https://aplayer.js.org/#/home?id=lrc" target="_blank">详情</a></td>
+</tr>
+<tr>
+<td>audio.theme</td>
+<td>-</td>
+<td>切换到此音频时的主题色，比上面的 theme 优先级高</td>
+</tr>
+<tr>
+<td>audio.type</td>
+<td>'auto'</td>
+<td>可选值: 'auto', 'hls', 'normal' 或其他自定义类型, <a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank">详情</a></td>
+</tr>
+<tr>
+<td>customAudioType</td>
+<td>-</td>
+<td>自定义类型，<a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank">详情</a></td>
+</tr>
+<tr>
+<td>mutex</td>
+<td>true</td>
+<td>互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</td>
+</tr>
+<tr>
+<td>lrcType</td>
+<td>0</td>
+<td><a href="https://aplayer.js.org/#/home?id=lrc" target="_blank">详情</a></td>
+</tr>
+<tr>
+<td>listFolded</td>
+<td>false</td>
+<td>列表默认折叠</td>
+</tr>
+<tr>
+<td>listMaxHeight</td>
+<td>-</td>
+<td>列表最大高度</td>
+</tr>
+<tr>
+<td>storageName</td>
+<td>'aplayer-setting'</td>
+<td>存储播放器设置的 localStorage key</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="2-下载一下文件复制到source目录"><a href="#2-下载一下文件复制到source目录" class="headerlink" title="2.下载一下文件复制到source目录"></a>2.下载一下文件复制到source目录</h3><p><img src="/pic/e26fad0f5f69fe0695c19005fa217e4954a83eb5.png" alt="2023-01-15-21-05-17-image.png"></p>
+<p>github链接：<a target="_blank" rel="noopener" href="https://github.com/DIYgod/APlayer/tree/master/dist">https://github.com/DIYgod/APlayer/tree/master/dist</a></p>
+<p>Irc:歌词文件</p>
+<h3 id="附加：分享一个wyy歌词获取工具"><a href="#附加：分享一个wyy歌词获取工具" class="headerlink" title="附加：分享一个wyy歌词获取工具"></a>附加：分享一个wyy歌词获取工具</h3><p><img src="/pic/0e120c6eec1a46c333105527006180597393b9dd.png" alt="2023-01-15-21-05-53-image.png"></p>
+<p>即可保存为Irc文件</p>
+<p><img src="/pic/d8b643925d2e144171000ccd0551ba2f2be838b5.png" alt="2023-01-15-21-06-34-image.png"></p>
+<p><img src="/pic/d6c4f9f16dbfcb285f9f34aeb596b9b183725550.png" alt="2023-01-15-21-06-46-image.png"></p>
+<p>效果如图</p>
+<h2 id="叨叨"><a href="#叨叨" class="headerlink" title="叨叨"></a>叨叨</h2><p>其实我也不知道到底当初怎么搞的，引号分号都检查过，可是后来重新一写就好了，用其他博主的就不行[无语.jpg]sss</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/150999914">https://zhuanlan.zhihu.com/p/150999914</a></p>
+<p><a target="_blank" rel="noopener" href="https://aplayer.js.org/">https://aplayer.js.org/</a></p>
+<p><a target="_blank" rel="noopener" href="https://moechun.fun/2022/07/28/Hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E6%8F%92%E4%BB%B6/">https://moechun.fun/2022/07/28/Hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E6%8F%92%E4%BB%B6/</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://luqizhi.tk">luqizhi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://luqizhi.tk/2023/01/12/hexo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE5/">https://luqizhi.tk/2023/01/12/hexo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://luqizhi.tk" target="_blank">luqizhi's blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo/">hexo</a><a class="post-meta__tags" href="/tags/sitemap/">sitemap</a><a class="post-meta__tags" href="/tags/%E6%8F%92%E4%BB%B6/">插件</a></div><div class="post_share"><div class="social-share" data-image="/png.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2023/01/11/hexo%E6%95%99%E7%A8%8B4/" title="hexo教程4"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">hexo教程4</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/12/11/hexo%20%E6%97%A7%E6%89%8B%E6%9C%BA%20linuxdeploy/" title="旧手机HEXO"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-11</div><div class="title">旧手机HEXO</div></div></a></div><div><a href="/2022/12/16/hexo-Linuxdeply%E6%95%99%E7%A8%8B3/" title="hexo,Linuxdeply教程3"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-16</div><div class="title">hexo,Linuxdeply教程3</div></div></a></div><div><a href="/2023/01/11/hexo%E6%95%99%E7%A8%8B4/" title="hexo教程4"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-01-11</div><div class="title">hexo教程4</div></div></a></div><div><a href="/2022/12/11/%E6%97%A7%E6%89%8B%E6%9C%BAlinuxdeploy%EF%BC%8C2-%E5%AE%89%E8%A3%85%E7%AF%87/" title="旧手机linuxdeploy，2.安装篇"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-11</div><div class="title">旧手机linuxdeploy，2.安装篇</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/png.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">luqizhi</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/luqizhi666"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/luqizhi666" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1708044815@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">艰难的旅途</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">前情提要</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE%EF%BC%885%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">hexo插件配置（5）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sitemap"><span class="toc-number">1.</span> <span class="toc-text">sitemap</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aplayer"><span class="toc-number">2.</span> <span class="toc-text">aplayer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%8A%A0%E5%85%A5%E5%A6%82%E4%B8%8A%E5%86%85%E5%AE%B9%E8%87%B3-config-fluid-yml"><span class="toc-number">2.1.</span> <span class="toc-text">1.加入如上内容至_config.fluid.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%8B%E8%BD%BD%E4%B8%80%E4%B8%8B%E6%96%87%E4%BB%B6%E5%A4%8D%E5%88%B6%E5%88%B0source%E7%9B%AE%E5%BD%95"><span class="toc-number">2.2.</span> <span class="toc-text">2.下载一下文件复制到source目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%99%84%E5%8A%A0%EF%BC%9A%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AAwyy%E6%AD%8C%E8%AF%8D%E8%8E%B7%E5%8F%96%E5%B7%A5%E5%85%B7"><span class="toc-number">2.3.</span> <span class="toc-text">附加：分享一个wyy歌词获取工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%A8%E5%8F%A8"><span class="toc-number">3.</span> <span class="toc-text">叨叨</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">4.</span> <span class="toc-text">参考</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/01/12/hexo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE5/" title="hexo插件配置5">hexo插件配置5</a><time datetime="2023-01-12T04:09:25.000Z" title="发表于 2023-01-12 12:09:25">2023-01-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/01/11/hexo%E6%95%99%E7%A8%8B4/" title="hexo教程4">hexo教程4</a><time datetime="2023-01-11T06:16:23.000Z" title="发表于 2023-01-11 14:16:23">2023-01-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/12/16/hexo-Linuxdeply%E6%95%99%E7%A8%8B3/" title="hexo,Linuxdeply教程3">hexo,Linuxdeply教程3</a><time datetime="2022-12-15T23:55:49.000Z" title="发表于 2022-12-16 07:55:49">2022-12-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/12/11/%E6%97%A7%E6%89%8B%E6%9C%BAlinuxdeploy%EF%BC%8C2-%E5%AE%89%E8%A3%85%E7%AF%87/" title="旧手机linuxdeploy，2.安装篇">旧手机linuxdeploy，2.安装篇</a><time datetime="2022-12-11T08:23:06.000Z" title="发表于 2022-12-11 16:23:06">2022-12-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/12/11/linuxdeploy/" title="linuxdeploy">linuxdeploy</a><time datetime="2022-12-10T17:53:54.000Z" title="发表于 2022-12-11 01:53:54">2022-12-11</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By luqizhi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

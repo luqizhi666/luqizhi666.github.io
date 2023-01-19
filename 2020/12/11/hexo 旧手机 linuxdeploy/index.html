@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>旧手机HEXO | luqizhi's blog</title><meta name="author" content="luqizhi"><meta name="copyright" content="luqizhi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前提准备篇wordpress导出首先安装WordPress官方导出插件导出一个xml文件保存好，待会要用 github 注册github账户，新建一个名为 用户名.github.io 的仓库  进入仓库，点击setting找到pages，启用。可以在下面的输入框输入自己的域名（需要cname解析到 用户名.github.io ）如 luqizhi.tk → luqizhi666.github.io">
+<meta property="og:type" content="article">
+<meta property="og:title" content="旧手机HEXO">
+<meta property="og:url" content="https://luqizhi.tk/2020/12/11/hexo%20%E6%97%A7%E6%89%8B%E6%9C%BA%20linuxdeploy/index.html">
+<meta property="og:site_name" content="luqizhi&#39;s blog">
+<meta property="og:description" content="前提准备篇wordpress导出首先安装WordPress官方导出插件导出一个xml文件保存好，待会要用 github 注册github账户，新建一个名为 用户名.github.io 的仓库  进入仓库，点击setting找到pages，启用。可以在下面的输入框输入自己的域名（需要cname解析到 用户名.github.io ）如 luqizhi.tk → luqizhi666.github.io">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://luqizhi.tk/png.png">
+<meta property="article:published_time" content="2020-12-10T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-01-12T06:40:40.000Z">
+<meta property="article:author" content="luqizhi">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="WordPress">
+<meta property="article:tag" content="githubpages">
+<meta property="article:tag" content="旧手机">
+<meta property="article:tag" content="linuxdeploy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://luqizhi.tk/png.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://luqizhi.tk/2020/12/11/hexo%20%E6%97%A7%E6%89%8B%E6%9C%BA%20linuxdeploy/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":70,"languages":{"author":"作者: luqizhi","link":"链接: ","source":"来源: luqizhi's blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '旧手机HEXO',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-01-12 14:40:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = url => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      link.onload = () => resolve()
+      link.onerror = () => reject()
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/png.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/wendy.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="luqizhi's blog"><img class="site-icon" src="/png.png"/><span class="site-name">luqizhi's blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">旧手机HEXO</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-12-10T16:00:00.000Z" title="发表于 2020-12-11 00:00:00">2020-12-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-12T06:40:40.000Z" title="更新于 2023-01-12 14:40:40">2023-01-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%BB%98%E8%AE%A4%EF%BC%882023%EF%BC%89/">默认（2023）</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/linuxdeploy%E6%90%AD%E5%BB%BAhexo/">linuxdeploy搭建hexo</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">392</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="旧手机HEXO"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="前提准备篇"><a href="#前提准备篇" class="headerlink" title="前提准备篇"></a>前提准备篇</h1><h2 id="wordpress导出"><a href="#wordpress导出" class="headerlink" title="wordpress导出"></a>wordpress导出</h2><p>首先安装WordPress官方导出插件导出一个xml文件保存好，待会要用</p>
+<h2 id="github"><a href="#github" class="headerlink" title="github"></a>github</h2><ul>
+<li><p>注册github账户，新建一个名为 用户名.github.io 的仓库</p>
+</li>
+<li><p>进入仓库，点击setting找到pages，启用。可以在下面的输入框输入自己的域名（需要cname解析到 用户名.github.io ）如 luqizhi.tk → luqizhi666.github.io 等待解析生效 <del>顺便一提，阿里云解析的时候看到一个dns解析生效查询，点进去可以看到各个地方的dns结果，ip，http和ping功能（我都不会（😭 反正挺好用的</del></p>
+</li>
+<li><p>回到主页找到绿色的按钮移上去复制一下下面的链接</p>
+<h2 id="旧手机"><a href="#旧手机" class="headerlink" title="旧手机"></a>旧手机</h2><h3 id="linuxdeploy"><a href="#linuxdeploy" class="headerlink" title="linuxdeploy"></a>linuxdeploy</h3><p>需要root，虽然可以用termux，以前按教学玩过，感觉不如它，<del>在我的旧手机至少是这样</del>，百度github下载一下，安装，配置，<del>太复杂不想写了</del>我试了几个月ubuntu，最后发下debian镜像就可以，气得当场去世，记得设置好自己的用户名密码和ssh，图形化界面之类的肯定不要。<strong>要增加几个目录链接到外部，方便编写</strong></p>
+<h3 id="（宝塔）"><a href="#（宝塔）" class="headerlink" title="（宝塔）"></a>（宝塔）</h3><p>自己安装了个，本来就是想用他的，可是手机带不起来，又耗几个月，后来因为连基本文件管理代码都记不住，就当文件管理了<br><code>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; bash install.sh 12f2c1d72</code></p>
+<h2 id="管理设备"><a href="#管理设备" class="headerlink" title="管理设备"></a>管理设备</h2><p>ssh工具（我用安卓手机和电脑）</p>
+</li>
+</ul>
+<ol>
+<li>jiucessh，挺不错的</li>
+<li>浏览器</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://luqizhi.tk">luqizhi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://luqizhi.tk/2020/12/11/hexo%20%E6%97%A7%E6%89%8B%E6%9C%BA%20linuxdeploy/">https://luqizhi.tk/2020/12/11/hexo%20%E6%97%A7%E6%89%8B%E6%9C%BA%20linuxdeploy/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://luqizhi.tk" target="_blank">luqizhi's blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo/">hexo</a><a class="post-meta__tags" href="/tags/WordPress/">WordPress</a><a class="post-meta__tags" href="/tags/githubpages/">githubpages</a><a class="post-meta__tags" href="/tags/%E6%97%A7%E6%89%8B%E6%9C%BA/">旧手机</a><a class="post-meta__tags" href="/tags/linuxdeploy/">linuxdeploy</a></div><div class="post_share"><div class="social-share" data-image="/png.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/05/30/%E5%85%AC%E5%91%8A/" title="公告"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">公告</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/12/11/%E6%97%A7%E6%89%8B%E6%9C%BAlinuxdeploy%EF%BC%8C2-%E5%AE%89%E8%A3%85%E7%AF%87/" title="旧手机linuxdeploy，2.安装篇"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-11</div><div class="title">旧手机linuxdeploy，2.安装篇</div></div></a></div><div><a href="/2022/12/16/hexo-Linuxdeply%E6%95%99%E7%A8%8B3/" title="hexo,Linuxdeply教程3"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-16</div><div class="title">hexo,Linuxdeply教程3</div></div></a></div><div><a href="/2023/01/11/hexo%E6%95%99%E7%A8%8B4/" title="hexo教程4"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-01-11</div><div class="title">hexo教程4</div></div></a></div><div><a href="/2023/01/12/hexo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE5/" title="hexo插件配置5"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-01-12</div><div class="title">hexo插件配置5</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/png.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">luqizhi</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/luqizhi666"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/luqizhi666" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1708044815@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">艰难的旅途</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E6%8F%90%E5%87%86%E5%A4%87%E7%AF%87"><span class="toc-number">1.</span> <span class="toc-text">前提准备篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#wordpress%E5%AF%BC%E5%87%BA"><span class="toc-number">1.1.</span> <span class="toc-text">wordpress导出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github"><span class="toc-number">1.2.</span> <span class="toc-text">github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A7%E6%89%8B%E6%9C%BA"><span class="toc-number">1.3.</span> <span class="toc-text">旧手机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#linuxdeploy"><span class="toc-number">1.3.1.</span> <span class="toc-text">linuxdeploy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%AE%9D%E5%A1%94%EF%BC%89"><span class="toc-number">1.3.2.</span> <span class="toc-text">（宝塔）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E8%AE%BE%E5%A4%87"><span class="toc-number">1.4.</span> <span class="toc-text">管理设备</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/01/12/hexo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE5/" title="hexo插件配置5">hexo插件配置5</a><time datetime="2023-01-12T04:09:25.000Z" title="发表于 2023-01-12 12:09:25">2023-01-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/01/11/hexo%E6%95%99%E7%A8%8B4/" title="hexo教程4">hexo教程4</a><time datetime="2023-01-11T06:16:23.000Z" title="发表于 2023-01-11 14:16:23">2023-01-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/12/16/hexo-Linuxdeply%E6%95%99%E7%A8%8B3/" title="hexo,Linuxdeply教程3">hexo,Linuxdeply教程3</a><time datetime="2022-12-15T23:55:49.000Z" title="发表于 2022-12-16 07:55:49">2022-12-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/12/11/%E6%97%A7%E6%89%8B%E6%9C%BAlinuxdeploy%EF%BC%8C2-%E5%AE%89%E8%A3%85%E7%AF%87/" title="旧手机linuxdeploy，2.安装篇">旧手机linuxdeploy，2.安装篇</a><time datetime="2022-12-11T08:23:06.000Z" title="发表于 2022-12-11 16:23:06">2022-12-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/12/11/linuxdeploy/" title="linuxdeploy">linuxdeploy</a><time datetime="2022-12-10T17:53:54.000Z" title="发表于 2022-12-11 01:53:54">2022-12-11</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By luqizhi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
