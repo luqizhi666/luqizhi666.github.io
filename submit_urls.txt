@@ -1,3 +1,4 @@
+https://luqizhi.gq/2023/03/04/esp32-c3%E5%BC%80%E5%8F%91%E6%9D%BF%E4%BD%BF%E7%94%A8blinker%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/
 https://luqizhi.gq/2023/01/19/hexo%E4%B8%BB%E9%A2%98-butterfly/
 https://luqizhi.gq/2023/01/12/hexo%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE5/
 https://luqizhi.gq/2022/12/16/hexo-Linuxdeply%E6%95%99%E7%A8%8B3/
@@ -7,4 +8,3 @@ https://luqizhi.gq/2020/12/11/hexo%20%E6%97%A7%E6%89%8B%E6%9C%BA%20linuxdeploy/
 https://luqizhi.gq/2022/12/11/linuxdeploy/
 https://luqizhi.gq/2021/11/27/esp8266-1/
 https://luqizhi.gq/2021/12/03/esp8266/
-https://luqizhi.gq/2021/12/18/esp8266%E7%82%B9%E4%BA%AE0-96%E5%AF%B8oled%E6%98%BE%E7%A4%BA%E5%B1%8F%EF%BC%88tft%EF%BC%89/

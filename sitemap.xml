@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://luqizhi.gq/2023/03/04/esp32-c3%E5%BC%80%E5%8F%91%E6%9D%BF%E4%BD%BF%E7%94%A8blinker%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/</loc>
+    
+    <lastmod>2023-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://luqizhi.gq/live/index.html</loc>
+    
+    <lastmod>2023-02-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://luqizhi.gq/live/1.html</loc>
     
     <lastmod>2023-02-06</lastmod>
     
@@ -859,7 +877,7 @@
 
   <url>
     <loc>https://luqizhi.gq/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -867,154 +885,168 @@
   
   <url>
     <loc>https://luqizhi.gq/tags/esp8266/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/arduino/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E6%98%BE%E7%A4%BA%E5%B1%8F/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E7%82%B9%E7%81%AF%E7%A7%91%E6%8A%80/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/hexo/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/WordPress/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/githubpages/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E6%97%A7%E6%89%8B%E6%9C%BA/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/linuxdeploy/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/Fluid/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/sitemap/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/github-hexo-linuxdeploy-%E5%AE%89%E5%8D%93-markdown/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/github-page/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E5%85%AC%E5%91%8A/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E5%88%B6%E4%BD%9C/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/butterfly/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://luqizhi.gq/tags/esp32-c3/</loc>
+    <lastmod>2023-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://luqizhi.gq/tags/blinker/</loc>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -1023,42 +1055,49 @@
   
   <url>
     <loc>https://luqizhi.gq/categories/%E9%BB%98%E8%AE%A4%EF%BC%882023%EF%BC%89/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/categories/%E6%99%AE%E9%80%9A%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/categories/uncategorized/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/categories/%E5%85%AC%E5%91%8A/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/categories/%E9%BB%98%E8%AE%A4%EF%BC%882023%EF%BC%89/linuxdeploy%E6%90%AD%E5%BB%BAhexo/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://luqizhi.gq/categories/linuxdeploy%E6%90%AD%E5%BB%BAhexo/</loc>
-    <lastmod>2023-02-06</lastmod>
+    <lastmod>2023-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://luqizhi.gq/categories/%E9%BB%98%E8%AE%A4%EF%BC%882023%EF%BC%89/esp32-c3/</loc>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

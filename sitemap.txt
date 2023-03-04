@@ -1,4 +1,6 @@
+https://luqizhi.gq/2023/03/04/esp32-c3%E5%BC%80%E5%8F%91%E6%9D%BF%E4%BD%BF%E7%94%A8blinker%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/
 https://luqizhi.gq/live/index.html
+https://luqizhi.gq/live/1.html
 https://luqizhi.gq/2023/01/19/hexo%E4%B8%BB%E9%A2%98-butterfly/
 https://luqizhi.gq/link/index.html
 https://luqizhi.gq/tags/index.html
@@ -116,9 +118,12 @@ https://luqizhi.gq/tags/%E7%94%9F%E6%B4%BB/
 https://luqizhi.gq/tags/%E5%88%B6%E4%BD%9C/
 https://luqizhi.gq/tags/butterfly/
 https://luqizhi.gq/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/
+https://luqizhi.gq/tags/esp32-c3/
+https://luqizhi.gq/tags/blinker/
 https://luqizhi.gq/categories/%E9%BB%98%E8%AE%A4%EF%BC%882023%EF%BC%89/
 https://luqizhi.gq/categories/%E6%99%AE%E9%80%9A%E6%96%87%E7%AB%A0/
 https://luqizhi.gq/categories/uncategorized/
 https://luqizhi.gq/categories/%E5%85%AC%E5%91%8A/
 https://luqizhi.gq/categories/%E9%BB%98%E8%AE%A4%EF%BC%882023%EF%BC%89/linuxdeploy%E6%90%AD%E5%BB%BAhexo/
 https://luqizhi.gq/categories/linuxdeploy%E6%90%AD%E5%BB%BAhexo/
+https://luqizhi.gq/categories/%E9%BB%98%E8%AE%A4%EF%BC%882023%EF%BC%89/esp32-c3/
