@@ -1,3 +1,4 @@
+https://luqizhi.gq/2023/05/27/arduino/
 https://luqizhi.gq/2023/03/04/0-96-ST7735-tft-espi%E5%BA%93/
 https://luqizhi.gq/2023/03/04/blinker%E7%A4%BA%E4%BE%8B/
 https://luqizhi.gq/2023/03/04/esp32-c3%E5%BC%80%E5%8F%91%E6%9D%BF%E4%BD%BF%E7%94%A8blinker%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/
@@ -124,6 +125,8 @@ https://luqizhi.gq/tags/esp32-c3/
 https://luqizhi.gq/tags/blinker/
 https://luqizhi.gq/tags/tft/
 https://luqizhi.gq/tags/0-96-tft/
+https://luqizhi.gq/tags/%E5%90%88%E5%AE%99air32/
+https://luqizhi.gq/tags/usb-to-ttl/
 https://luqizhi.gq/categories/%E9%BB%98%E8%AE%A4%EF%BC%882023%EF%BC%89/
 https://luqizhi.gq/categories/%E6%99%AE%E9%80%9A%E6%96%87%E7%AB%A0/
 https://luqizhi.gq/categories/uncategorized/
